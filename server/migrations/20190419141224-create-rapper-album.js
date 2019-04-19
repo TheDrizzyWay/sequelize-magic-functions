@@ -1,6 +1,6 @@
 export default {
   up: (queryInterface, Sequelize) => queryInterface.createTable('RapperAlbums', {
-    rapperId: {
+    RapperId: {
       type: Sequelize.UUID,
       allowNull: false,
       references: {
@@ -9,7 +9,7 @@ export default {
         onDelete: 'CASCADE'
       },
     },
-    albumId: {
+    AlbumId: {
       type: Sequelize.UUID,
       allowNull: false,
       references: {

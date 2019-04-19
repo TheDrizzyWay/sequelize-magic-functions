@@ -14,7 +14,7 @@ export default (sequelize, DataTypes) => {
 
   Album.associate = (models) => {
     Album.belongsToMany(models.Rapper, {
-       through: 'RapperAlbum',
+      through: 'RapperAlbums',
      });
   };
 
